@@ -16,7 +16,7 @@ def game(word):
     guessed_letters = set()
     while guesses > 0 and not all(letter in guessed_letters for letter in word):
         #https://www.w3schools.com/python/ref_string_join.asp
-        print("Guessed:".join(guessed_letters))
+        print("Guessed:", " ".join(guessed_letters))
         print("Word:", " ".join(letter if letter in guessed_letters else "_" for letter in word))
         guess = input("Guess a letter: ")
         if guess in guessed_letters:
