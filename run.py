@@ -56,7 +56,10 @@ def main():
         elif menu_entry_index == 1:
             print("You choose difficulty 2")
         elif menu_entry_index == 2:
-            print("You choose difficulty 3")
+            print("   😵")
+            print("🤛 👕 🤜")
+            print("   👖")
+            print("  👞👞")
         
 
 
