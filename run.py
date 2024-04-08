@@ -18,7 +18,7 @@ def game(word):
         #https://www.w3schools.com/python/ref_string_join.asp
         print("Guessed:", " ".join(guessed_letters))
         print("Word:", " ".join(letter if letter in guessed_letters else "_" for letter in word))
-        guess = input("Guess a letter: ")
+        guess = input("Guess a letter: \n")
         if guess in guessed_letters:
             print("You alredy guessed that letter!")
         elif guess in word:
