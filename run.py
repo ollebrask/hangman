@@ -45,7 +45,7 @@ def game(word):
 
         #To make sure nothing else than a letter is inputted: found at https://www.w3schools.com/python/ref_string_isalpha.asp
         while True:
-            guess = input("Guess a letter: \n")
+            guess = input("Guess a letter: \n").strip()
             if len(guess) == 1 and guess.isalpha():
                 break
             else:
