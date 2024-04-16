@@ -35,14 +35,22 @@ def difficulty():
 
 def game(word):
     guesses = 5
-    #https://www.w3schools.com/python/ref_func_set.asp
+    #set function found at https://www.w3schools.com/python/ref_func_set.asp
     guessed_letters = set()
     while guesses > 0 and not all(letter in guessed_letters for letter in word):
         print(stages.stages[5 - guesses])
-        #https://www.w3schools.com/python/ref_string_join.asp
+        #join found at https://www.w3schools.com/python/ref_string_join.asp
         print("Guessed:", " ".join(guessed_letters))
         print("Word:", " ".join(letter if letter in guessed_letters else "_" for letter in word))
-        guess = input("Guess a letter: \n")
+
+        #To make sure nothing else than a letter is inputted: found at https://www.w3schools.com/python/ref_string_isalpha.asp
+        while True:
+            guess = input("Guess a letter: \n")
+            if len(guess) == 1 and guess.isalpha():
+                break
+            else:
+                print("Invalid input. Please enter only a single letter.")
+
         if guess in guessed_letters:
             print("You alredy guessed that letter!")
         elif guess in word:
