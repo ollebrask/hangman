@@ -1,5 +1,6 @@
 from simple_term_menu import TerminalMenu
 import words
+import stages
 import random
 
 def rules():
