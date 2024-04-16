@@ -70,9 +70,9 @@ def game(word):
 def main():
     print("Welcome to Hangman game, please choose one of the following:\n")
     options = ["Read rules", "Choose difficulty"]
+    # Terminal menu found at https://pypi.org/project/simple-term-menu/
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
-    #print(f"You have selected {options[menu_entry_index]}!")
 
     if menu_entry_index == 0:
         rules()
