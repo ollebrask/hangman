@@ -10,6 +10,25 @@ def rules():
     print("3. If you guess all the correct letters in the word, you win!")
     print("4. If you guess a incorrect letter, a body part is shown.")
     print("5. If you guess 5 incorrect letters, you lose")
+    difficulty()
+
+def difficulty():
+        difficulty = ["1", "2", "3"]
+        terminal_menu = TerminalMenu(difficulty, title="Choose difficulty:")
+        menu_entry_index = terminal_menu.show()
+
+        if menu_entry_index == 0:
+            print("You choose difficulty 1")
+            #https://www.w3schools.com/python/ref_random_choice.asp
+            word = random.choice(words.words_1)
+            game(word)
+        elif menu_entry_index == 1:
+            print("You choose difficulty 2")
+        elif menu_entry_index == 2:
+            print("   😵")
+            print("🤛 👕 🤜")
+            print("   👖")
+            print("  👞👞")
 
 def game(word):
     guesses = 5
@@ -47,23 +66,7 @@ def main():
     if menu_entry_index == 0:
         rules()
     elif menu_entry_index == 1:
-        difficulty = ["1", "2", "3"]
-        terminal_menu = TerminalMenu(difficulty, title="Difficulty:")
-        menu_entry_index = terminal_menu.show()
-
-        if menu_entry_index == 0:
-            print("You choose difficulty 1")
-            #https://www.w3schools.com/python/ref_random_choice.asp
-            word = random.choice(words.words_1)
-            game(word)
-        elif menu_entry_index == 1:
-            print("You choose difficulty 2")
-        elif menu_entry_index == 2:
-            print("   😵")
-            print("🤛 👕 🤜")
-            print("   👖")
-            print("  👞👞")
-        
+        difficulty()
 
 
 main()
