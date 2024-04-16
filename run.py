@@ -65,7 +65,15 @@ def game(word):
         print(f"Congratulations! You guessed the word: {word}")
     else:
         print(stages.stages[5 - guesses])
-        print(f"Game Over. The word was: {word}")
+        print(f"Game Over. The word was: {word}\n")
+        difficulty = ["Yes", "No"]
+        terminal_menu = TerminalMenu(difficulty, title="Play again?")
+        menu_entry_index = terminal_menu.show()
+
+        if menu_entry_index == 0:
+            main()
+        elif menu_entry_index == 1:
+            print("Thank you for playing :)")
 
 def main():
     print("Welcome to Hangman game, please choose one of the following:\n")
