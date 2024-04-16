@@ -24,11 +24,14 @@ def difficulty():
             game(word)
         elif menu_entry_index == 1:
             print("You choose difficulty 2")
+            #https://www.w3schools.com/python/ref_random_choice.asp
+            word = random.choice(words.words_2)
+            game(word)
         elif menu_entry_index == 2:
-            print("   😵")
-            print("🤛 👕 🤜")
-            print("   👖")
-            print("  👞👞")
+            print("You choose difficulty 3")
+            #https://www.w3schools.com/python/ref_random_choice.asp
+            word = random.choice(words.words_3)
+            game(word)
 
 def game(word):
     guesses = 5
