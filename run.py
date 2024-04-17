@@ -3,47 +3,57 @@ import words
 import stages
 import random
 
+
 def rules():
-    print("1. You can choose by 3 difficulties.")
+    print("1. You can choose by 3 difficulties")
     print("   '1' for easy, '2' for medium, '3' for hard")
-    print("2. If you guess a correct letter, the letter will appear in the word")
+    print(
+        "2. If you guess a correct letter, the letter will appear in the word")
     print("3. If you guess all the correct letters in the word, you win!")
-    print("4. If you guess a incorrect letter, a part of hangmans body is shown.")
+    print(
+        "4. If you guess a incorrect letter, a part of hangmans body is shown")
     print("5. If you guess 5 incorrect letters, you lose\n")
     difficulty()
 
-def difficulty():
-        difficulty = ["1", "2", "3"]
-        terminal_menu = TerminalMenu(difficulty, title="Choose difficulty:")
-        menu_entry_index = terminal_menu.show()
 
-        if menu_entry_index == 0:
-            print("You choose difficulty 1")
-            #https://www.w3schools.com/python/ref_random_choice.asp
-            word = random.choice(words.words_1)
-            game(word)
-        elif menu_entry_index == 1:
-            print("You choose difficulty 2")
-            #https://www.w3schools.com/python/ref_random_choice.asp
-            word = random.choice(words.words_2)
-            game(word)
-        elif menu_entry_index == 2:
-            print("You choose difficulty 3")
-            #https://www.w3schools.com/python/ref_random_choice.asp
-            word = random.choice(words.words_3)
-            game(word)
+def difficulty():
+    difficulty = ["1", "2", "3"]
+    terminal_menu = TerminalMenu(difficulty, title="Choose difficulty:")
+    menu_entry_index = terminal_menu.show()
+
+    if menu_entry_index == 0:
+        print("You choose difficulty 1")
+        # https://www.w3schools.com/python/ref_random_choice.asp
+        word = random.choice(words.words_1)
+        game(word)
+    elif menu_entry_index == 1:
+        print("You choose difficulty 2")
+        # https://www.w3schools.com/python/ref_random_choice.asp
+        word = random.choice(words.words_2)
+        game(word)
+    elif menu_entry_index == 2:
+        print("You choose difficulty 3")
+        # https://www.w3schools.com/python/ref_random_choice.asp
+        word = random.choice(words.words_3)
+        game(word)
+
 
 def game(word):
     guesses = 5
-    #set function found at https://www.w3schools.com/python/ref_func_set.asp
+    # set function found at https://www.w3schools.com/python/ref_func_set.asp
     guessed_letters = set()
-    while guesses > 0 and not all(letter in guessed_letters for letter in word):
+    while guesses > 0 and not all(
+            letter in guessed_letters for letter in word):
         print(stages.stages[5 - guesses])
-        #join found at https://www.w3schools.com/python/ref_string_join.asp
+        # join found at https://www.w3schools.com/python/ref_string_join.asp
         print("Guessed:", " ".join(guessed_letters))
-        print("Word:", " ".join(letter if letter in guessed_letters else "_" for letter in word))
+        print(
+            "Word:", " ".join(
+                letter if letter in guessed_letters
+                else "_" for letter in word))
 
-        #To make sure nothing else than a letter is inputted: found at https://www.w3schools.com/python/ref_string_isalpha.asp
+        # To make sure nothing else than a letter is inputted
+        # found at https://www.w3schools.com/python/ref_string_isalpha.asp
         while True:
             guess = input("Guess a letter: \n").strip()
             if len(guess) == 1 and guess.isalpha():
@@ -60,7 +70,7 @@ def game(word):
             guessed_letters.add(guess)
             guesses -= 1
             print(f"Incorrect. You have {guesses} guesses left.")
-    
+
     if all(letter in guessed_letters for letter in word):
         print(f"Congratulations! You guessed the word: {word}")
     else:
@@ -74,6 +84,7 @@ def game(word):
             main()
         elif menu_entry_index == 1:
             print("Thank you for playing :)")
+
 
 def main():
     print("Welcome to Hangman game, please choose one of the following:\n")
