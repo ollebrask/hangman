@@ -38,6 +38,17 @@ def difficulty():
         game(word)
 
 
+def retry():
+    difficulty = ["Yes", "No"]
+    terminal_menu = TerminalMenu(difficulty, title="Play again?")
+    menu_entry_index = terminal_menu.show()
+
+    if menu_entry_index == 0:
+        main()
+    elif menu_entry_index == 1:
+        print("Thank you for playing :)")
+
+
 def game(word):
     guesses = 5
     # set function found at https://www.w3schools.com/python/ref_func_set.asp
@@ -73,17 +84,11 @@ def game(word):
 
     if all(letter in guessed_letters for letter in word):
         print(f"Congratulations! You guessed the word: {word}")
+        retry()
     else:
         print(stages.stages[5 - guesses])
         print(f"Game Over. The word was: {word}\n")
-        difficulty = ["Yes", "No"]
-        terminal_menu = TerminalMenu(difficulty, title="Play again?")
-        menu_entry_index = terminal_menu.show()
-
-        if menu_entry_index == 0:
-            main()
-        elif menu_entry_index == 1:
-            print("Thank you for playing :)")
+        retry()
 
 
 def main():
