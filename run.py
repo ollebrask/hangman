@@ -5,6 +5,9 @@ import random
 
 
 def rules():
+    """
+    Presents the rules for the user, and showing the choose difficulty menu
+    """
     print("1. You can choose by 3 difficulties")
     print("   '1' for easy, '2' for medium, '3' for hard")
     print(
@@ -17,6 +20,10 @@ def rules():
 
 
 def difficulty():
+    """
+    Shows a menu for choosing difficulties.
+    Based on selected level it chooses a random word and starts game
+    """
     difficulty = ["1", "2", "3"]
     terminal_menu = TerminalMenu(difficulty, title="Choose difficulty:")
     menu_entry_index = terminal_menu.show()
@@ -39,6 +46,10 @@ def difficulty():
 
 
 def retry():
+    """
+    Shows a menu where user can decide to play again
+    If yes, main function runs. If no, string is shown.
+    """
     difficulty = ["Yes", "No"]
     terminal_menu = TerminalMenu(difficulty, title="Play again?")
     menu_entry_index = terminal_menu.show()
