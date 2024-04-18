@@ -61,6 +61,11 @@ def retry():
 
 
 def game(word):
+    """
+    Printing the stage based on guesses and guessed letters
+    Input for guessing letters
+    When out of guesses or all correct letters, retry function runs
+    """
     guesses = 5
     # set function found at https://www.w3schools.com/python/ref_func_set.asp
     guessed_letters = set()
