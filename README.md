@@ -1,32 +1,48 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman Game
 
-Welcome,
+![Responsive Mockup](documentation/responsive.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+*The link to [Hangman Game](https://hangman-olle-f5e67dd225fc.herokuapp.com/)*
 
-## Reminders
+The Hangman Game is a Python terminal project.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
 ---
 
-Happy coding!
+## How to play:
+
+  1. Click this *[link](https://hangman-olle-f5e67dd225fc.herokuapp.com/)*
+  2. As soon as the page is loaded, click 'RUN PROGRAM'.
+  3. Choose to show rules if you are new to the game.
+  4. Choose difficulty (1, 2 or 3)
+  5. Guess a letter and press Enter
+  6. If you guess 5 letters incorrect, you lose the game. If you guess all the correct letters, you win.
+  7. Choose if you want to play again, maybe with a different difficulty?
+  
+
+---
+## User Stories
+
+  * As a visitor, i want to play a fun and challenging game.
+  * As a visitor, i want to easily understand how the game works.
+  * As a visitor, i want to easily navigate through the game.
+  * As a visitor, i want to have clear and unambigous feedback during the game.
+  * As a visitor, i want to play the game without any issues.
+
+---
+
+## Features
+  
+  - **When the program is loaded**
+
+  The user can see a welcoming message and a terminal menu with two options:
+
+    1. Read rules;
+
+    2. Choose difficulty;
+  
+  ![loading Program](documentation/features/game_start.png)
+
+
+
+---
