@@ -6,7 +6,8 @@ import random
 
 def rules():
     """
-    Presents the rules for the user, and showing the choose difficulty menu
+    Presents the rules for the user.
+    Showing the choose difficulty menu.
     """
     print(f"""
     1. You can choose by 3 difficulties
@@ -120,4 +121,5 @@ def main():
         difficulty()
 
 
-main()
+if __name__ == "__main__":
+    main()
