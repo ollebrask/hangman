@@ -9,7 +9,7 @@ import os
 
 def clear_terminal():
     """ Clears the terminal """
-    #found at https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+    # https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
