@@ -2,14 +2,16 @@
 
 The code was tested frequently during the process.
 
-### Manual testing
+### Manual input testing
 
 | feature | action | expected result | tested | passed | comments |
 | --- | --- | --- | --- | --- | --- |
 | Input | | | | | |
-|  | Try to input "?" | Input is not accepted | Yes | Yes | - |
-|  | Try to input "?" | Input is not accepted | Yes | Yes | - |
-
+|  | Try to input sign "?" | Input is not accepted | Yes | Yes | - |
+|  | Try to input number "3" | Input is not accepted | Yes | Yes | - |
+|  | Try to input two letters "ab" | Input is not accepted | Yes | Yes | - |
+|  | Try to input uppercase letter "A" | Input is accepted | Yes | Yes | - |
+|  | Try to input spaces and letter " a   " | Input is accepted | Yes | Yes | - |
 
 ---
 
