@@ -3,6 +3,13 @@ import words
 import stages
 import rules
 import random
+import os
+
+
+def clear_terminal():
+    """ Clears the terminal """
+    #found at https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def difficulty():
@@ -41,8 +48,10 @@ def retry():
     menu_entry_index = terminal_menu.show()
 
     if menu_entry_index == 0:
+        clear_terminal()
         main()
     elif menu_entry_index == 1:
+        clear_terminal()
         print("Thank you for playing :)")
 
 
