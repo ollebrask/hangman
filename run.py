@@ -8,14 +8,14 @@ def rules():
     """
     Presents the rules for the user, and showing the choose difficulty menu
     """
-    print("1. You can choose by 3 difficulties")
-    print("   '1' for easy, '2' for medium, '3' for hard")
-    print(
-        "2. If you guess a correct letter, the letter will appear in the word")
-    print("3. If you guess all the correct letters in the word, you win!")
-    print(
-        "4. If you guess a incorrect letter, a part of hangmans body is shown")
-    print("5. If you guess 5 incorrect letters, you lose\n")
+    print(f"""
+    1. You can choose by 3 difficulties
+       '1' for easy, '2' for medium, '3' for hard
+    2. If you guess a correct letter, the letter will appear in the word
+    3. If you guess all the correct letters in the word, you win!
+    4. If you guess a incorrect letter, a part of hangmans body is shown
+    5. If you guess 5 incorrect letters, you lose
+    """)
     difficulty()
 
 
@@ -73,7 +73,7 @@ def game(word):
             letter in guessed_letters for letter in word):
         print(stages.stages[5 - guesses])
         # join found at https://www.w3schools.com/python/ref_string_join.asp
-        print("Guessed:", " ".join(guessed_letters))
+        print("Used letters:", " ".join(guessed_letters))
         print(
             "Word:", " ".join(
                 letter if letter in guessed_letters
