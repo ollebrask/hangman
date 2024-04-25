@@ -1,5 +1,6 @@
 import run
 
+
 def rules():
     """
     Presents the rules for the user.
