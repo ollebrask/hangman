@@ -64,6 +64,7 @@ def game(word):
     guessed_letters = set()
     while guesses > 0 and not all(
             letter in guessed_letters for letter in word):
+        clear_terminal()
         print(stages.stages[5 - guesses])
         # join found at https://www.w3schools.com/python/ref_string_join.asp
         print("Used letters:", " ".join(guessed_letters))
@@ -93,6 +94,7 @@ def game(word):
         print(f"Congratulations! You guessed the word: {word}")
         retry()
     else:
+        clear_terminal()
         print(stages.stages[5 - guesses])
         print(f"Game Over. The word was: {word}\n")
         retry()
