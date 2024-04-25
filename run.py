@@ -78,7 +78,7 @@ def game(word):
                 else "_" for letter in word))
 
         while True:
-            guess = input("Guess a letter: \n").strip()
+            guess = input("Guess a letter: \n").strip().lower()
             if len(guess) == 1 and guess.isalpha():
                 break
             else:
