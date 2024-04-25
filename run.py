@@ -1,23 +1,8 @@
 from simple_term_menu import TerminalMenu
 import words
 import stages
+import rules
 import random
-
-
-def rules():
-    """
-    Presents the rules for the user.
-    Showing the choose difficulty menu.
-    """
-    print(f"""
-    1. You can choose by 3 difficulties
-       '1' for easy, '2' for medium, '3' for hard
-    2. If you guess a correct letter, the letter will appear in the word
-    3. If you guess all the correct letters in the word, you win!
-    4. If you guess a incorrect letter, a part of hangmans body is shown
-    5. If you guess 5 incorrect letters, you lose
-    """)
-    difficulty()
 
 
 def difficulty():
@@ -80,8 +65,6 @@ def game(word):
                 letter if letter in guessed_letters
                 else "_" for letter in word))
 
-        # To make sure nothing else than a letter is inputted
-        # found at https://www.w3schools.com/python/ref_string_isalpha.asp
         while True:
             guess = input("Guess a letter: \n").strip()
             if len(guess) == 1 and guess.isalpha():
@@ -116,7 +99,7 @@ def main():
     menu_entry_index = terminal_menu.show()
 
     if menu_entry_index == 0:
-        rules()
+        rules.rules()
     elif menu_entry_index == 1:
         difficulty()
 
