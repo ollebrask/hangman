@@ -86,7 +86,7 @@ def game(word):
 
         if guess in guessed_letters:
             clear_terminal()
-            print("You alredy guessed that letter!")
+            print("You already guessed that letter!")
         elif guess in word:
             clear_terminal()
             guessed_letters.add(guess)
