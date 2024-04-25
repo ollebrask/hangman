@@ -27,14 +27,14 @@ No errors were found:
 
 - **words.py**
 
-![Python Validator](documentation/linter_words)
+![Python Validator](documentation/linter_words.png)
 
 - **rules.py**
 
-![Python Validator](documentation/linter_rules)
+![Python Validator](documentation/linter_rules.png)
 
 - **stages.py**
 
-![Python Validator](documentation/linter_stages)
+![Python Validator](documentation/linter_stages.png)
 
 ---
