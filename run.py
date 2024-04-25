@@ -23,15 +23,18 @@ def difficulty():
     menu_entry_index = terminal_menu.show()
 
     if menu_entry_index == 0:
+        clear_terminal()
         print("You choose difficulty 1")
         # https://www.w3schools.com/python/ref_random_choice.asp
         word = random.choice(words.words_1)
         game(word)
     elif menu_entry_index == 1:
+        clear_terminal()
         print("You choose difficulty 2")
         word = random.choice(words.words_2)
         game(word)
     elif menu_entry_index == 2:
+        clear_terminal()
         print("You choose difficulty 3")
         word = random.choice(words.words_3)
         game(word)
