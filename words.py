@@ -1,3 +1,5 @@
+"""Contains the words to be guessed at different difficulties"""
+
 words_1 = [
     "blue",
     "horse",

@@ -1,3 +1,5 @@
+"""The different stages to visualize the hangman"""
+
 stages = [
     """
     ______
