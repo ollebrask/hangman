@@ -1,4 +1,5 @@
 from simple_term_menu import TerminalMenu
+from colorama import Fore, Back, Style
 import words
 import stages
 import rules
@@ -50,7 +51,8 @@ def retry():
         main()
     elif menu_entry_index == 1:
         clear_terminal()
-        print("Thank you for playing :)")
+        print(Fore.YELLOW + "Thank you for playing 😄")
+        print(Style.RESET_ALL)
 
 
 def game(word):
@@ -101,7 +103,9 @@ def game(word):
 
 
 def main():
-    print("Welcome to Hangman game, please choose one of the following:\n")
+    print(Fore.RED + "Welcome to the 😵 Hangman 😵 game!")
+    print(Fore.YELLOW + "Please choose one of the following:\n")
+    print(Style.RESET_ALL)
     options = ["Read rules", "Choose difficulty"]
     # Terminal menu found at https://pypi.org/project/simple-term-menu/
     terminal_menu = TerminalMenu(options)
