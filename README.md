@@ -122,3 +122,44 @@ The Hangman Game is a Python terminal project.
 
   ![rules](documentation/features/game_win.png)
 ---
+
+## Flowchart
+
+
+  ![Flowchart](documentation/flowchart.png)
+
+
+
+---
+## Technologies Used
+
+### Languages:
+
+- [Python 3.12.2](https://www.python.org/downloads/release/python-3122/): used to anchor the project and direct all application behavior.
+
+- [JavaScript](https://www.javascript.com/): used to provide the start script needed to run the Code Institute mock terminal in the browser.
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser.
+
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Standard library imports:
+
+- [random](https://docs.python.org/3/library/random.html) was used to implement pseudo-random number generation.
+- [os](https://docs.python.org/3/library/os.html ) was used to clear the terminal.
+##### Third-party imports:
+
+- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement the menu.
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
+
+#### Other tools:
+
+- [GitPod](https://www.gitpod.io/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [Lucidspark](https://www.lucidspark.com/) was used to make a flowchart for the README file.
+- [Heroku](https://www.heroku.com/) was used to deploy the project.
+
+
+---
