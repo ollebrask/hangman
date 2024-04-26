@@ -37,12 +37,88 @@ The Hangman Game is a Python terminal project.
 
   The user can see a welcoming message and a terminal menu with two options:
 
-    1. Read rules;
+    1. Read rules
 
-    2. Choose difficulty;
+    2. Choose difficulty
   
   ![loading Program](documentation/features/game_start.png)
 
+  - **When the user select Read rules**
 
+  The user can see a list of rules and a terminal menu with three difficulties to choose from.
+  In the previous terminal menu if the user chooses number 2, the same terminal menu will be shown:
 
+    1. for easy
+
+    2. for medium
+
+    3. for hard
+
+  ![rules](documentation/features/game_rules.png)
+
+  - **When the user selects a difficulty**
+
+  At the top the user is presented which difficulty was chosen.
+  Underneath is an empty frame for the hangman.
+  There are three fields shown:
+  
+    1. (Used letters:) Here the user will see the letters guessed.
+
+    2. (Word:) This shows the number of letters in the word.
+
+    3. (Guess a letter:) Input field for the user to write a letter.
+
+  ![rules](documentation/features/game_level.png)
+
+  - **When the user selects wrong letter**
+
+  At the top the user will see a message: Incorrect. You have x guesses left.
+  A body part will be shown in the hangman frame.
+  The letter will be added to the (Used letters:)
+
+  ![rules](documentation/features/game_wrong.png)
+
+  - **When the user selects a correct letter**
+
+  At the top the user will see a message: Correct!
+  The letter will be added to the (Used letters:)
+  The letter will be visual in the right place of (Word:)
+
+  ![rules](documentation/features/game_correct.png)
+
+   - **When the user inputs invalid data**
+
+  If the user inputs anything else than one letter this will happen:
+
+  At the bottom a message will be shown: Invalid input. Please enter only a single letter.
+  Underneth it the user is able to (Guess a letter:) again.
+
+  ![rules](documentation/features/game_invalid.png)
+
+  - **When the user is out of guesses**
+
+  The user can see the whole hangmans body.
+  A text will be shown with the correct word: Game Over. The word was xxxxx.
+  A terminal menu will be shown:
+
+    Play again?
+
+    1. Yes (This will restart the game and the user returns to the start)
+
+    2. No (This will end the game, a text will be shown: Thank you for playing 😄)
+
+  ![rules](documentation/features/game_over.png)
+
+  - **When the user guesses all correct letters**
+
+  A text will be shown with the correct word: Congratulations! You guessed the word xxxxx.
+  A terminal menu will be shown:
+
+    Play again?
+
+    1. Yes (This will restart the game and the user returns to the start)
+
+    2. No (This will end the game, a text will be shown: Thank you for playing 😄)
+
+  ![rules](documentation/features/game_win.png)
 ---
