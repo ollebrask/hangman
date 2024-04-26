@@ -164,9 +164,55 @@ The Hangman Game is a Python terminal project.
 ---
 ## Bugs
 
++ **Solved bugs**
 
+1. The function ```clear_terminal()``` made the if-statement strings not visible. Former placement for function commented out in code below.
 
+    - *Solutions:* Moved the ```clear_terminal()``` function inside of each if,elif,else-statement. See in the code below:
 
+     ```python
+    def game(word):
+    """
+    Printing the stage based on guesses and guessed letters
+    Input for guessing letters
+    When out of guesses or all correct letters, retry function runs
+    """
+    guesses = 5
+    guessed_letters = set()
+    while guesses > 0 and not all(
+            letter in guessed_letters for letter in word):
+        # clear_terminal()
+        print(stages.stages[5 - guesses])
+        print("Used letters:", " ".join(guessed_letters))
+        print(
+            "Word:", " ".join(
+                letter if letter in guessed_letters
+                else "_" for letter in word))
+
+        while True:
+            guess = input("Guess a letter: \n").strip().lower()
+            if len(guess) == 1 and guess.isalpha():
+                break
+            else:
+                print("Invalid input. Please enter only a single letter.")
+
+        if guess in guessed_letters:
+            clear_terminal()
+            print("You already guessed that letter!")
+        elif guess in word:
+            clear_terminal()
+            guessed_letters.add(guess)
+            print("Correct!")
+        else:
+            clear_terminal()
+            guessed_letters.add(guess)
+            guesses -= 1
+            print(f"Incorrect. You have {guesses} guesses left.")
+      ```
+
++ **Unsolved bugs**
+
+None
 
 ---
 ## Testing
