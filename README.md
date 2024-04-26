@@ -183,54 +183,54 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 
 - Clone the repository:
   1. Open a folder on your computer with the terminal.
-  1. Run the following command
+  2. Run the following command
   - `git clone https://github.com/ollebrask/hangman.git`
 
-  1. Create your own GitHub repository to host the code.
-  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+  3. Create your own GitHub repository to host the code.
+  4. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
 
-  1. Push the files to your repository with the following command:
+  5. Push the files to your repository with the following command:
   `git push`
-  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
-  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+  6. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  7. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
 
       - ![New Heroku App](documentation/deployment/new_heroku_app.png)
 
-  1. Go to the Deploy tab:
+  8. Go to the Deploy tab:
 
       - ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
       - ![Deployment Method](documentation/deployment/deployment_method.png)
 
-  1. Link your GitHub account and connect the application to the repository you created.
+  9. Link your GitHub account and connect the application to the repository you created.
 
       - ![Link GitHub account](documentation/deployment/link_to_github.png)
 
-  1. Go to the Settings tab:
+  10. Go to the Settings tab:
   
       - ![Settings Tab](documentation/deployment/settings_tab.png)
 
-  1. Click "Add buildpack":
+  11. Click "Add buildpack":
 
       - ![Add Buildpack](documentation/deployment/add_buildpack.png)
 
-  1. Add the Python and Node.js buildpacks in the following order:
+  12. Add the Python and Node.js buildpacks in the following order:
 
       - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
 
-  1. Click "Reveal Config Vars."
+  13. Click "Reveal Config Vars."
 
       - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
 
-  1. Add 1 new Config Vars:
+  14. Add 1 new Config Vars:
       - Key: PORT Value: 8000
       - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
 
-  1. Go back to the Deploy tab:
+  15. Go back to the Deploy tab:
 
       - ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
-  1. Click "Deploy Branch":
+  16. Click "Deploy Branch":
 
       - ![Deploy Branch](documentation/deployment/deploy_branch.png)
 
@@ -238,6 +238,23 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 
       - ![Deploying Branch](documentation/deployment/deploying_branch.png)
 
-  1. Click "Open app" to launch the application inside a web page.
+  17. Click "Open app" to launch the application inside a web page.
 
       - ![View Button](documentation/deployment/view_app.png)
+
+---
+
+## Credits
+
+- Color formatting: [Colorama](https://pypi.org/project/colorama/).
+- Terminal menu: [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/).
+- [Heroku](https://www.heroku.com/) for hosting the application.
+- Clear the terminal: [Stackoverflow](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python)
+- Inspiration and structure of the README: [IuliiaKonovalova](https://github.com/IuliiaKonovalova/madlib_with_python/)
+- Github were used to store my repository: [GitHub](https://github.com)
+- For finding usable functions [w3schools](https://www.w3schools.com/python)
+
+---
+## Acknowledgements
+
+My mentor for valuable feedback! [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
