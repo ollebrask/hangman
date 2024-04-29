@@ -12,6 +12,9 @@ The code was tested frequently during the process.
 |  | Try to input two letters "ab" | Input is not accepted | Yes | Yes | - |
 |  | Try to input uppercase letter "A" | Input is accepted | Yes | Yes | - |
 |  | Try to input spaces and letter " a   " | Input is accepted | Yes | Yes | - |
+|  | Try to input a correct letter | Input is accepted and added to "Word:" | Yes | Yes | - |
+|  | Try to input a incorrect letter | Input is accepted as a wrong letter. | Yes | Yes | - |
+|  | Try to input a incorrect letter | Remaining guesses decreased by one. | Yes | Yes | - |
 | Terminal menus | | | | | |
 | 1 | Choose 'Read rules' | Directed to rules | Yes | Yes | - |
 | 1 | Choose 'Choose difficulty' | Directed to difficulties | Yes | Yes | - |
