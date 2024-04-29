@@ -229,6 +229,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 
 - Clone the repository:
 1. Open a new folder in your IDE(Integrated Development Environment)
+
 2. Run the following command
   - `git clone https://github.com/ollebrask/hangman.git`
 
@@ -271,7 +272,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 
 14. Add 1 new Config Vars:
   - Key: PORT Value: 8000
-  - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+  - This Config was provided by [Code Institute](https://codeinstitute.net/)
 
 15. Go back to the Deploy tab:
 
