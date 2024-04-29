@@ -4,16 +4,19 @@ words_1 = [
     "blue",
     "horse",
     "happy",
-    "green"]
+    "green"
+]
 
 words_2 = [
     "culture",
     "villain",
     "spaceship",
-    "marathon"]
+    "marathon"
+]
 
 words_3 = [
     "countryside",
     "asparagus",
     "vacancy",
-    "shuttlebus"]
+    "shuttlebus"
+]
