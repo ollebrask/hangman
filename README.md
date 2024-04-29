@@ -166,7 +166,7 @@ The Hangman Game is a Python terminal project.
 
 + **Solved bugs**
 
-1. The function ```clear_terminal()``` made the if-statement strings not visible. Former placement for function commented out in code below.
+1. The function ```clear_terminal()``` didn't work at the correct time, it was interferring with the if, elif, else-statements. Former placement for function commented out in code below.
 
     - *Solutions:* Moved the ```clear_terminal()``` function inside of each if,elif,else-statement. See in the code below:
 
