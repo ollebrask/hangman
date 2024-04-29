@@ -228,65 +228,66 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 ### To deploy the project to Heroku:
 
 - Clone the repository:
-  1. Open a new folder in your IDE(Integrated Development Environment)
-  2. Run the following command
+1. Open a new folder in your IDE(Integrated Development Environment)
+2. Run the following command
   - `git clone https://github.com/ollebrask/hangman.git`
 
-  3. Create your own GitHub repository to host the code.
-  4. Run the command `git remote set-url origin <Your GitHub Repository Path>` to set the remote repository location to your repository.
+3. Create your own GitHub repository to host the code.
+4. Run the command `git remote set-url origin <Your GitHub Repository Path>` to set the remote repository location to your repository.
 
-  5. Push the files to your repository with the following command:
-  `git push`
-  6. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
-  7. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+5. Push the files to your repository with the following command: `git push`
 
-      - ![New Heroku App](documentation/deployment/new_heroku_app.png)
+6. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
 
-  8. Go to the Deploy tab:
+7. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
 
-      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+  ![New Heroku App](documentation/deployment/new_heroku_app.png)
 
-      - ![Deployment Method](documentation/deployment/deployment_method.png)
+8. Go to the Deploy tab:
 
-  9. Link your GitHub account and connect the application to the repository you created.
+  ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
-      - ![Link GitHub account](documentation/deployment/link_to_github.png)
+  ![Deployment Method](documentation/deployment/deployment_method.png)
 
-  10. Go to the Settings tab:
-  
-      - ![Settings Tab](documentation/deployment/settings_tab.png)
+9. Link your GitHub account and connect the application to the repository you created.
 
-  11. Click "Add buildpack":
+  ![Link GitHub account](documentation/deployment/link_to_github.png)
 
-      - ![Add Buildpack](documentation/deployment/add_buildpack.png)
+10. Go to the Settings tab:
 
-  12. Add the Python and Node.js buildpacks in the following order:
+  ![Settings Tab](documentation/deployment/settings_tab.png)
 
-      - ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
+11. Click "Add buildpack":
 
-  13. Click "Reveal Config Vars."
+  ![Add Buildpack](documentation/deployment/add_buildpack.png)
 
-      - ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
+12. Add the Python and Node.js buildpacks in the following order:
 
-  14. Add 1 new Config Vars:
-      - Key: PORT Value: 8000
-      - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+  ![Add Python and Node.js](documentation/deployment/add_python_and_node_js.png)
 
-  15. Go back to the Deploy tab:
+13. Click "Reveal Config Vars."
 
-      - ![Deploy Tab](documentation/deployment/deploy_tab.png)
+  ![Reveal Config Vars](documentation/deployment/reveal_config_vars.png)
 
-  16. Click "Deploy Branch":
+14. Add 1 new Config Vars:
+  - Key: PORT Value: 8000
+  - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
 
-      - ![Deploy Branch](documentation/deployment/deploy_branch.png)
+15. Go back to the Deploy tab:
 
-      - Wait for the completion of the deployment.
+  ![Deploy Tab](documentation/deployment/deploy_tab.png)
 
-      - ![Deploying Branch](documentation/deployment/deploying_branch.png)
+16. Click "Deploy Branch":
 
-  17. Click "Open app" to launch the application inside a web page.
+  ![Deploy Branch](documentation/deployment/deploy_branch.png)
 
-      - ![View Button](documentation/deployment/view_app.png)
+  - Wait for the completion of the deployment.
+
+  ![Deploying Branch](documentation/deployment/deploying_branch.png)
+
+17. Click "Open app" to launch the application inside a web page.
+
+  ![View Button](documentation/deployment/view_app.png)
 
 ---
 
