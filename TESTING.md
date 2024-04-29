@@ -15,6 +15,13 @@ The code was tested frequently during the process.
 |  | Try to input a correct letter | Input is accepted and added to "Word:" | Yes | Yes | - |
 |  | Try to input a incorrect letter | Input is accepted as a wrong letter. | Yes | Yes | - |
 |  | Try to input a incorrect letter | Remaining guesses decreased by one. | Yes | Yes | - |
+|  | All correct letters guessed | Correct word is shown | Yes | Yes | - |
+|  | All correct letters guessed | Play again terminal is shown | Yes | Yes | - |
+|  | All correct letters guessed | Congratulations text is shown | Yes | Yes | - |
+|  | 5 incorrect letters guessed | Full hangman is shown | Yes | Yes | - |
+|  | 5 incorrect letters guessed | Correct word is shown | Yes | Yes | - |
+|  | 5 incorrect letters guessed | Game over text is shown | Yes | Yes | - |
+|  | 5 incorrect letters guessed | Play again terminal is shown | Yes | Yes | - |
 | Terminal menus | | | | | |
 | 1 | Choose 'Read rules' | Directed to rules | Yes | Yes | - |
 | 1 | Choose 'Choose difficulty' | Directed to difficulties | Yes | Yes | - |
