@@ -228,12 +228,12 @@ Please refer to the [TESTING.md](TESTING.md) file for all test related documenta
 ### To deploy the project to Heroku:
 
 - Clone the repository:
-  1. Open a folder on your computer with the terminal.
+  1. Open a new folder in your IDE(Integrated Development Environment)
   2. Run the following command
   - `git clone https://github.com/ollebrask/hangman.git`
 
   3. Create your own GitHub repository to host the code.
-  4. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+  4. Run the command `git remote set-url origin <Your GitHub Repository Path>` to set the remote repository location to your repository.
 
   5. Push the files to your repository with the following command:
   `git push`
